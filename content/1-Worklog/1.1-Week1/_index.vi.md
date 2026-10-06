@@ -1,59 +1,39 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-10-06
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### 🎯 Mục tiêu tuần 1:
+* Hoàn thành các bài học nền tảng trong **Section 1 - Explore AWS Services**.
+* Cấu hình an toàn tài khoản **AWS Budgets** chống phát sinh chi phí ngoài ý muốn.
+* Thực hành quản lý danh tính **AWS IAM**: Tạo IAM Users, IAM Groups và phân quyền chuẩn DevSecOps.
 
-### Mục tiêu tuần 1:
+---
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### 📋 Tiến độ công việc tuần 1:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Buổi | Bài học & Nội dung thực hành chi tiết | Trạng thái | Nguồn tài liệu |
+| :--- | :--- | :---: | :--- |
+| **Buổi 1** | **[Bài 2] Manage usage costs with AWS Budgets**<br>• Tìm hiểu cơ chế tính phí AWS Free Tier.<br>• Cấu hình AWS Budgets gửi cảnh báo tự động về Email khi chi phí vượt quá $1.00 USD.<br>• Nắm rõ các quy tắc an toàn bảo mật tài khoản. | <span style="color:green; font-weight:bold;">[ĐÃ HOÀN THÀNH]</span> | [AWS Budgets](https://cloudjourney.awsstudygroup.com/1-explore/1.2-budgets/) |
+| **Buổi 1** | **[Bài 4] Access Management with AWS IAM**<br>• Tìm hiểu khái niệm IAM User, IAM Group & Policy.<br>• Thực hành tạo nhóm `Developers-Group`, tạo user `dev-khang` và gán vào nhóm.<br>• Kiểm tra phân quyền truy cập danh tính chuẩn DevSecOps. | <span style="color:green; font-weight:bold;">[ĐÃ HOÀN THÀNH]</span> | [AWS IAM](https://cloudjourney.awsstudygroup.com/1-explore/1.4-iam/) |
+| **Buổi 2** | **[Bài 5] Grant permissions through IAM Role**<br>• Tìm hiểu cơ chế mượn mũ IAM Role & Token tạm thời tự hủy (`sts assume-role`).<br>• Thực hành tạo `S3-Admin-Role` & `AdminGroup`. | <span style="color:orange; font-weight:bold;">[BÀI HỌC TIẾP THEO]</span> | [IAM Role](https://cloudjourney.awsstudygroup.com/1-explore/1.5-iamrole/) |
+| **Buổi 3** | **[Bài 6] Deploy network with Amazon VPC**<br>• Thiết kế Public/Private Subnet, Internet Gateway & Security Groups. | ⏳ Chờ thực hành | [Amazon VPC](https://cloudjourney.awsstudygroup.com/1-explore/1.6-vpc/) |
+| **Buổi 4** | **[Bài 7 & 8] Amazon EC2 & AWS CLI**<br>• Khởi chạy EC2 Linux Server, kết nối SSH & quản lý qua AWS CLI. | ⏳ Chờ thực hành | [Amazon EC2](https://cloudjourney.awsstudygroup.com/1-explore/1.7-ec2/) |
+| **Buổi 5** | **[Bài 10] Hosting static website with Amazon S3**<br>• Khởi tạo S3 Bucket, cấu hình Public Bucket Policy & Deploy web tĩnh HTML/CSS. | ⏳ Chờ thực hành | [Amazon S3](https://cloudjourney.awsstudygroup.com/1-explore/1.10-s3staticweb/) |
 
+---
 
-### Kết quả đạt được tuần 1:
+### 🏆 Kết quả đạt được trong Buổi 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### 1. Quản lý Chi phí (AWS Budgets):
+* Đã cấu hình thành công **AWS Budgets** với hạn mức cảnh báo **$1.00 USD**.
+* Nắm rõ danh mục tài nguyên Free Tier (750h EC2/RDS, 5GB S3, 1M Lambda requests/tháng).
+* Nắm rõ nguyên tắc tuyệt đối **không commit Access Key / Secret Key lên GitHub**.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 2. Quản lý Danh tính & Phân quyền (AWS IAM):
+* Đã khởi tạo thành công nhóm người dùng `Developers-Group` và user `dev-khang`.
+* Gán quyền thành công và kiểm tra truy cập tài khoản IAM.
+* Hiểu nguyên lý phân quyền tối thiểu (Least Privilege), không sử dụng tài khoản Root cho công việc hàng ngày.
