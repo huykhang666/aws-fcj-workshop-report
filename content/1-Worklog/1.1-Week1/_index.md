@@ -6,34 +6,37 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### 🎯 Week 1 Objectives:
-* Complete foundation lessons in **Section 1 - Explore AWS Services**.
-* Configure **AWS Budgets** to prevent unexpected cloud costs.
-* Practice identity management with **AWS IAM**: Create IAM Users, IAM Groups, and enforce DevSecOps Least Privilege permissions.
+### Week 1 Objectives:
 
----
+* Understand basic AWS services, how to use AWS Console, AWS CLI & LocalStack/Floci.
+* Configure AWS Budgets cost controls to prevent unexpected cloud charges.
+* Practice AWS IAM identity management: Create IAM Users, IAM Groups, and enforce DevSecOps Least Privilege permissions.
 
-### 📋 Week 1 Task Progress:
+### Tasks to be carried out this week:
 
-| Session | Lesson & Detailed Practice Content | Status | Reference Material |
-| :--- | :--- | :---: | :--- |
-| **Session 1** | **[Lesson 2] Manage usage costs with AWS Budgets**<br>• Understand AWS Free Tier allocation.<br>• Configure AWS Budgets to auto-send email alerts if cost exceeds $1.00 USD.<br>• Master account security rules against credential leaks. | <span style="color:green; font-weight:bold;">[COMPLETED]</span> | [AWS Budgets](https://cloudjourney.awsstudygroup.com/1-explore/1.2-budgets/) |
-| **Session 1** | **[Lesson 4] Access Management with AWS IAM**<br>• Understand IAM Users, IAM Groups & Policies.<br>• Practice creating `Developers-Group`, user `dev-khang`, and assign membership.<br>• Verify identity access control following DevSecOps standards. | <span style="color:green; font-weight:bold;">[COMPLETED]</span> | [AWS IAM](https://cloudjourney.awsstudygroup.com/1-explore/1.4-iam/) |
-| **Session 2** | **[Lesson 5] Grant permissions through IAM Role**<br>• Learn temporary credential assumption (`sts assume-role`).<br>• Practice creating `S3-Admin-Role` & `AdminGroup`. | <span style="color:orange; font-weight:bold;">[NEXT LESSON]</span> | [IAM Role](https://cloudjourney.awsstudygroup.com/1-explore/1.5-iamrole/) |
-| **Session 3** | **[Lesson 6] Deploy network with Amazon VPC**<br>• Design Public/Private Subnets, Internet Gateway & Security Groups. | ⏳ Pending | [Amazon VPC](https://cloudjourney.awsstudygroup.com/1-explore/1.6-vpc/) |
-| **Session 4** | **[Lesson 7 & 8] Amazon EC2 & AWS CLI**<br>• Launch EC2 Linux Server, SSH connection & manage via AWS CLI. | ⏳ Pending | [Amazon EC2](https://cloudjourney.awsstudygroup.com/1-explore/1.7-ec2/) |
-| **Session 5** | **[Lesson 10] Hosting static website with Amazon S3**<br>• Create S3 Bucket, configure Public Bucket Policy & Deploy static HTML/CSS site. | ⏳ Pending | [Amazon S3](https://cloudjourney.awsstudygroup.com/1-explore/1.10-s3staticweb/) |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Get acquainted with FCAJ Buildrathon 2026 program <br> - Review internship guidelines and grading rubric (&ge;7.0/10) | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn AWS overview & core service categories: <br>&emsp; + Compute (EC2) <br>&emsp; + Storage (S3, EBS) <br>&emsp; + Networking (VPC) <br>&emsp; + Database (RDS, DynamoDB) <br>&emsp; + Security & IAM | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Setup Local practice environment (Docker Floci) & AWS CLI <br> - **Day 1 Practice (Lesson 2 & Lesson 4):** <br>&emsp; + [Lesson 2] Configure **AWS Budgets** auto-alert at $1.00 USD <br>&emsp; + [Lesson 4] Configure **AWS IAM**: Create `Developers-Group`, user `dev-khang`, and assign group membership | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/1-explore/> |
+| 5 | - **Day 2 Practice (Lesson 5 & Lesson 6 - Planned):** <br>&emsp; + [Lesson 5] IAM Roles & `sts assume-role` <br>&emsp; + [Lesson 6] Amazon VPC basic network design | 10/07/2026 | | <https://cloudjourney.awsstudygroup.com/1-explore/> |
+| 6 | - **Day 3 Practice (Lesson 7, 8 & 10 - Planned):** <br>&emsp; + [Lesson 7 & 8] Launch EC2 Linux Instance & CLI management <br>&emsp; + [Lesson 10] Deploy Static Website with Amazon S3 | 10/08/2026 | | <https://cloudjourney.awsstudygroup.com/1-explore/> |
 
----
 
-### 🏆 Session 1 Key Achievements:
+### Week 1 Achievements:
 
-#### 1. Cost Management (AWS Budgets):
-* Successfully configured **AWS Budgets** with an alert threshold of **$1.00 USD**.
-* Mastered Free Tier limits (750h EC2/RDS, 5GB S3, 1M Lambda requests/month).
-* Enforced strict security practices: **never commit Access Keys / Secret Keys to GitHub**.
+* Understood what AWS is and mastered core service categories for DevSecOps:
+  * Compute (EC2)
+  * Storage (S3, EBS)
+  * Networking (VPC)
+  * Database (RDS, DynamoDB)
+  * Security & IAM
 
-#### 2. Identity & Access Management (AWS IAM):
-* Successfully created `Developers-Group` and user `dev-khang`.
-* Assigned group permissions and tested IAM access policies.
-* Understood Least Privilege principle, avoiding Root Account usage for daily operations.
+* Successfully configured AWS Budgets with an automated $1.00 USD email alert threshold.
+
+* Successfully executed Lab 1 (IAM Users & Groups):
+  * Created `Developers-Group`
+  * Created user `dev-khang` and assigned group permissions
+  * Mastered Least Privilege principle, avoiding Root account usage for daily tasks.
+
+* Successfully set up local Docker Floci environment (`localhost:4566`) and mastered AWS CLI operations.

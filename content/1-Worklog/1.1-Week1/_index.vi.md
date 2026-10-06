@@ -6,34 +6,37 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### 🎯 Mục tiêu tuần 1:
-* Hoàn thành các bài học nền tảng trong **Section 1 - Explore AWS Services**.
-* Cấu hình an toàn tài khoản **AWS Budgets** chống phát sinh chi phí ngoài ý muốn.
-* Thực hành quản lý danh tính **AWS IAM**: Tạo IAM Users, IAM Groups và phân quyền chuẩn DevSecOps.
+### Mục tiêu tuần 1:
 
----
+* Hiểu các dịch vụ AWS cơ bản, cách sử dụng AWS Console, AWS CLI & Docker Floci local.
+* Cấu hình an toàn ngân sách tài khoản **AWS Budgets** chống phát sinh chi phí ngoài ý muốn.
+* Thực hành quản lý danh tính **AWS IAM**: Tạo IAM Users, IAM Groups và phân quyền theo tiêu chuẩn DevSecOps.
 
-### 📋 Tiến độ công việc tuần 1:
+### Các công việc cần triển khai trong tuần này:
 
-| Buổi | Bài học & Nội dung thực hành chi tiết | Trạng thái | Nguồn tài liệu |
-| :--- | :--- | :---: | :--- |
-| **Buổi 1** | **[Bài 2] Manage usage costs with AWS Budgets**<br>• Tìm hiểu cơ chế tính phí AWS Free Tier.<br>• Cấu hình AWS Budgets gửi cảnh báo tự động về Email khi chi phí vượt quá $1.00 USD.<br>• Nắm rõ các quy tắc an toàn bảo mật tài khoản. | <span style="color:green; font-weight:bold;">[ĐÃ HOÀN THÀNH]</span> | [AWS Budgets](https://cloudjourney.awsstudygroup.com/1-explore/1.2-budgets/) |
-| **Buổi 1** | **[Bài 4] Access Management with AWS IAM**<br>• Tìm hiểu khái niệm IAM User, IAM Group & Policy.<br>• Thực hành tạo nhóm `Developers-Group`, tạo user `dev-khang` và gán vào nhóm.<br>• Kiểm tra phân quyền truy cập danh tính chuẩn DevSecOps. | <span style="color:green; font-weight:bold;">[ĐÃ HOÀN THÀNH]</span> | [AWS IAM](https://cloudjourney.awsstudygroup.com/1-explore/1.4-iam/) |
-| **Buổi 2** | **[Bài 5] Grant permissions through IAM Role**<br>• Tìm hiểu cơ chế mượn mũ IAM Role & Token tạm thời tự hủy (`sts assume-role`).<br>• Thực hành tạo `S3-Admin-Role` & `AdminGroup`. | <span style="color:orange; font-weight:bold;">[BÀI HỌC TIẾP THEO]</span> | [IAM Role](https://cloudjourney.awsstudygroup.com/1-explore/1.5-iamrole/) |
-| **Buổi 3** | **[Bài 6] Deploy network with Amazon VPC**<br>• Thiết kế Public/Private Subnet, Internet Gateway & Security Groups. | ⏳ Chờ thực hành | [Amazon VPC](https://cloudjourney.awsstudygroup.com/1-explore/1.6-vpc/) |
-| **Buổi 4** | **[Bài 7 & 8] Amazon EC2 & AWS CLI**<br>• Khởi chạy EC2 Linux Server, kết nối SSH & quản lý qua AWS CLI. | ⏳ Chờ thực hành | [Amazon EC2](https://cloudjourney.awsstudygroup.com/1-explore/1.7-ec2/) |
-| **Buổi 5** | **[Bài 10] Hosting static website with Amazon S3**<br>• Khởi tạo S3 Bucket, cấu hình Public Bucket Policy & Deploy web tĩnh HTML/CSS. | ⏳ Chờ thực hành | [Amazon S3](https://cloudjourney.awsstudygroup.com/1-explore/1.10-s3staticweb/) |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Làm quen với chương trình FCAJ Buildrathon 2026 <br> - Đọc và lưu ý các quy định thực tập và tiêu chí đánh giá mộc thực tập (&ge;7.0/10) | 06/10/2026 | 06/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tìm hiểu tổng quan AWS & các nhóm dịch vụ cốt lõi: <br>&emsp; + Compute (EC2) <br>&emsp; + Storage (S3, EBS) <br>&emsp; + Networking (VPC) <br>&emsp; + Database (RDS, DynamoDB) <br>&emsp; + Security & IAM | 06/10/2026 | 06/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Cấu hình môi trường thực hành Local (Docker Floci) & AWS CLI <br> - **Thực hành Ngày 1 (Bài 2 & Bài 4):** <br>&emsp; + [Bài 2] Cấu hình **AWS Budgets** cảnh báo tự động $1.00 USD <br>&emsp; + [Bài 4] Cấu hình **AWS IAM**: Tạo `Developers-Group`, tạo user `dev-khang` và gán vào nhóm | 06/10/2026 | 06/10/2026 | <https://cloudjourney.awsstudygroup.com/1-explore/> |
+| 5 | - **Thực hành Ngày 2 (Bài 5 & Bài 6 - Kế hoạch):** <br>&emsp; + [Bài 5] Phân quyền IAM Role & `sts assume-role` <br>&emsp; + [Bài 6] Thiết kế hạ tầng mạng Amazon VPC cơ bản | 07/10/2026 | | <https://cloudjourney.awsstudygroup.com/1-explore/> |
+| 6 | - **Thực hành Ngày 3 (Bài 7, 8 & 10 - Kế hoạch):** <br>&emsp; + [Bài 7 & 8] Khởi tạo máy chủ EC2 Linux & thao tác CLI <br>&emsp; + [Bài 10] Deploy Static Website với Amazon S3 | 08/10/2026 | | <https://cloudjourney.awsstudygroup.com/1-explore/> |
 
----
 
-### 🏆 Kết quả đạt được trong Buổi 1:
+### Kết quả đạt được tuần 1:
 
-#### 1. Quản lý Chi phí (AWS Budgets):
-* Đã cấu hình thành công **AWS Budgets** với hạn mức cảnh báo **$1.00 USD**.
-* Nắm rõ danh mục tài nguyên Free Tier (750h EC2/RDS, 5GB S3, 1M Lambda requests/tháng).
-* Nắm rõ nguyên tắc tuyệt đối **không commit Access Key / Secret Key lên GitHub**.
+* Hiểu tổng quan AWS là gì và nắm vững các nhóm dịch vụ cốt lõi cho Kỹ sư DevSecOps:
+  * Compute (EC2)
+  * Storage (S3, EBS)
+  * Networking (VPC)
+  * Database (RDS, DynamoDB)
+  * Security & IAM
 
-#### 2. Quản lý Danh tính & Phân quyền (AWS IAM):
-* Đã khởi tạo thành công nhóm người dùng `Developers-Group` và user `dev-khang`.
-* Gán quyền thành công và kiểm tra truy cập tài khoản IAM.
-* Hiểu nguyên lý phân quyền tối thiểu (Least Privilege), không sử dụng tài khoản Root cho công việc hàng ngày.
+* Cấu hình thành công AWS Budgets mức cảnh báo $1.00 USD gửi email tự động khi phát sinh chi phí.
+
+* Thực hành thành công bài Lab 1 (IAM Users & Groups):
+  * Tạo thành công nhóm `Developers-Group`
+  * Tạo user `dev-khang` và gán vào nhóm phân quyền
+  * Nắm vững nguyên tắc phân quyền tối thiểu (Least Privilege), không dùng tài khoản Root hàng ngày.
+
+* Thiết lập thành công môi trường thực hành Local an toàn với Docker Floci (`localhost:4566`) và kết nối AWS CLI thành thạo.
